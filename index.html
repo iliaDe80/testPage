@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Simple Landing Page</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        color: #222;
+      }
+
+      /* Navbar */
+      nav {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8%;
+        background: white;
+        border-bottom: 1px solid #eee;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2563eb;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        margin-left: 25px;
+      }
+
+      /* Hero */
+      .hero {
+        min-height: calc(100vh - 70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .hero-content {
+        max-width: 700px;
+      }
+
+      .hero h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+      }
+
+      .hero h1 span {
+        color: #2563eb;
+      }
+
+      .hero p {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background: #1d4ed8;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        nav {
+          padding: 0 5%;
+        }
+
+        nav .links {
+          display: none;
+        }
+
+        .hero h1 {
+          font-size: 40px;
+        }
+
+        .hero p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">MyBrand</div>
+
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div class="hero-content">
+        <h1>Build Something <span>Great.</span></h1>
+
+        <p>
+          A simple landing page built with HTML and CSS. Clean, responsive and
+          easy to customize.
+        </p>
+
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </main>
+  </body>
+</html>
